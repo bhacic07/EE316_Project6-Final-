@@ -15,7 +15,8 @@ ENTITY ps2_keyboard IS
     ps2_code     : buffer STD_LOGIC_VECTOR(7 DOWNTO 0);  --code received from PS/2
     shift        : OUT STD_LOGIC;                     --shift key status
     ctrl         : OUT STD_LOGIC;                     --ctrl key status
-    alt          : OUT STD_LOGIC);                    --alt key status
+    alt          : OUT STD_LOGIC;                    --alt key status
+    ascii_out    : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); --ASCII output
 END ps2_keyboard;
 
 ARCHITECTURE logic OF ps2_keyboard IS
@@ -120,5 +121,5 @@ BEGIN
   shift <= shift_signal;
   ctrl <= ctrl_signal;
   alt <= alt_signal;
-
+  ascii_out <= ascii_output;
 END logic;
