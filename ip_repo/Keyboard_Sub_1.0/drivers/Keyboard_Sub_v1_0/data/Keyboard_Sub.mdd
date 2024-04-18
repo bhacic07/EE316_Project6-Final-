@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER Keyboard_Sub
+	OPTION supported_peripherals = (Keyboard_Sub);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = Keyboard_Sub;
+END DRIVER
