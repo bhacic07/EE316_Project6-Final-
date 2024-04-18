@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 16 14:17:28 2024
+# Process ID: 21672
+# Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1
+# Command line: vivado.exe -log vga_sync.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_sync.tcl -notrace
+# Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.vdi
+# Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_sync.tcl -notrace

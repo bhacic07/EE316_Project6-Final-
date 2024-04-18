@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 16 14:17:28 2024
+# Process ID: 21672
+# Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1
+# Command line: vivado.exe -log vga_sync.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_sync.tcl -notrace
+# Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.vdi
+# Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_sync.tcl -notrace
+Command: link_design -top vga_sync -part xc7z007sclg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Vp_Vn_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vp_Vn_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux1_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux1_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux9_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux9_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux6_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux6_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux15_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux15_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux5_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux5_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux13_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux13_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux0_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux0_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux12_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux12_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux8_0_v_p'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux8_0_v_n'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'echo'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'trigger'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Buzzer'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwmServo'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'echo'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dcMotor'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'oSCL'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'oSDA'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'oSCL'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'oSDA'. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Temp/EE316/p6/EE316_Project6-Final/Cora-Z7-07S-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 672.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 676.496 ; gain = 381.383
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 694.621 ; gain = 18.125
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12426017e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1232.984 ; gain = 538.363
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1374.000 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1374.000 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.000 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 12426017e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1374.000 ; gain = 697.504
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file vga_sync_drc_opted.rpt -pb vga_sync_drc_opted.pb -rpx vga_sync_drc_opted.rpx
+Command: report_drc -file vga_sync_drc_opted.rpt -pb vga_sync_drc_opted.pb -rpx vga_sync_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f0cb3994
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.000 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (16) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 16 sites.
+	Term: bram_addr_out[0]
+	Term: bram_addr_out[1]
+	Term: bram_addr_out[2]
+	Term: bram_addr_out[3]
+	Term: bram_addr_out[4]
+	Term: bram_addr_out[5]
+	Term: bram_addr_out[6]
+	Term: bram_addr_out[7]
+	Term: bram_addr_out[8]
+	Term: bram_addr_out[9]
+	Term: bram_addr_out[10]
+	Term: bram_addr_out[11]
+	Term: bram_addr_out[12]
+	Term: bram_addr_out[13]
+	Term: bram_addr_out[14]
+	Term: bram_addr_out[15]
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (16) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 16 sites.
+	Term: bram_addr_out[0]
+	Term: bram_addr_out[1]
+	Term: bram_addr_out[2]
+	Term: bram_addr_out[3]
+	Term: bram_addr_out[4]
+	Term: bram_addr_out[5]
+	Term: bram_addr_out[6]
+	Term: bram_addr_out[7]
+	Term: bram_addr_out[8]
+	Term: bram_addr_out[9]
+	Term: bram_addr_out[10]
+	Term: bram_addr_out[11]
+	Term: bram_addr_out[12]
+	Term: bram_addr_out[13]
+	Term: bram_addr_out[14]
+	Term: bram_addr_out[15]
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |    14 | LVCMOS33(14)                                                           |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     2 | LVCMOS33(2)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |    16 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | hsync                | LVCMOS33        | IOB_X0Y33            | Y14                  |                      |
+|        | vga_b[0]             | LVCMOS33        | IOB_X0Y15            | Y19                  |                      |
+|        | vga_b[1]             | LVCMOS33        | IOB_X0Y35            | Y17                  |                      |
+|        | vga_b[2]             | LVCMOS33        | IOB_X0Y25            | U19                  |                      |
+|        | vga_b[3]             | LVCMOS33        | IOB_X0Y5             | W19                  |                      |
+|        | vga_g[0]             | LVCMOS33        | IOB_X0Y34            | W14                  |                      |
+|        | vga_g[1]             | LVCMOS33        | IOB_X0Y48            | T11                  |                      |
+|        | vga_g[2]             | LVCMOS33        | IOB_X0Y14            | V16                  |                      |
+|        | vga_g[3]             | LVCMOS33        | IOB_X0Y42            | V12                  |                      |
+|        | vga_r[0]             | LVCMOS33        | IOB_X0Y16            | Y18                  |                      |
+|        | vga_r[1]             | LVCMOS33        | IOB_X0Y36            | Y16                  |                      |
+|        | vga_r[2]             | LVCMOS33        | IOB_X0Y26            | U18                  |                      |
+|        | vga_r[3]             | LVCMOS33        | IOB_X0Y6             | W18                  |                      |
+|        | vsync                | LVCMOS33        | IOB_X0Y47            | T10                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | clk                  | LVCMOS33        | IOB_X0Y74            | H16                  |                      |
+|        | reset                | LVCMOS33        | IOB_X0Y91            | D20                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 50a04271
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.767 . Memory (MB): peak = 1374.000 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 50a04271
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.768 . Memory (MB): peak = 1374.000 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 50a04271
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.774 . Memory (MB): peak = 1374.000 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 30 Warnings, 30 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 16 14:18:34 2024...

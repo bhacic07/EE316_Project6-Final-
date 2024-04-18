@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 11 12:34:46 2024
+# Process ID: 32536
+# Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9476 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
+# Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vivado.log
+# Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/top_level_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+export_ip_user_files -of_objects  [get_files C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/top_level_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/top_level_tb.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source vga_sync_tb.tcl
+run 100 ms
+run 1000 ms
+restart
+run 10 ms
+restart
+add_force {/vga_sync_tb/reset} -radix hex {1 0ns}
+run 10 us
+add_force {/vga_sync_tb/reset} -radix hex {0 0ns}
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source vga_sync_tb.tcl
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+current_hw_device [get_hw_devices xc7z007s_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.runs/impl_1/vga_sync.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
+save_wave_config {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync_tb_behav.wcfg
+set_property xsim.view C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync_tb_behav.wcfg [get_filesets sim_1]
+close_sim
