@@ -17,6 +17,7 @@ entity vga_bram_v1_0_S00_AXI is
 	port (
 		-- Users to add ports here
         I_CLK_50MHZ      : IN std_logic;
+        I_CLK_125MHZ     : IN std_logic;
         bram_data_in     : IN std_logic_vector(31 downto 0);
         bram_addr_out    : OUT std_logic_vector(15 downto 0);
 		hsync, vsync     : OUT std_logic;
@@ -25,6 +26,7 @@ entity vga_bram_v1_0_S00_AXI is
         vga_b            : OUT std_logic_vector(3 downto 0);
         
         --!!!!!!!!!!!!!!!!!!INCLUDE BRAM HERE!!!!!!!!!!!
+        
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -108,6 +110,18 @@ component vga_sync IS
 	);
 END component vga_sync;
 
+component blk_mem_gen_0 IS
+  PORT (
+    clka : IN STD_LOGIC;
+    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    clkb : IN STD_LOGIC;
+    addrb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+  );
+END component blk_mem_gen_0;
+
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 	signal axi_awready	: std_logic;
@@ -156,13 +170,24 @@ port map(
 		clk           =>S_AXI_ACLK,
 		reset         =>S_AXI_ARESETN,
 		I_CLK_50MHZ   =>I_CLK_50MHZ,
-		bram_data_in  => bram_data_in,
-		bram_addr_out => bram_addr_out,
+		bram_data_in  =>doutb,
+		bram_addr_out =>addrb,
 		hsync         =>hsync, 
 		vsync         =>vsync,
         vga_r         =>vga_r,
         vga_g         =>vga_g,
         vga_b         =>vga_b
+);
+
+INST_blk_mem_gen_0: blk_mem_gen_0
+port map(
+    clka   =>I_CLK_125MHZ,
+    wea    =>'1',
+    addra  =>,--HARDCODE TO SOME ADDR,
+    dina   =>,--HARDCODE TO SOME data
+    clkb   =>I_CLK_125MHZ,
+    addrb  =>bram_addr_out,
+    doutb  =>bram_data_in
 );
 
 	-- I/O Connections assignments

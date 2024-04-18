@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 16 12:53:16 2024
+# Process ID: 12484
+# Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8480 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
+# Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vivado.log
+# Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync_tb_behav.wcfg
+source vga_sync_tb.tcl
+run 100 us
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ms
+run 1000 ms
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+close_design
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+create_peripheral xilinx.com user vga_bram 1.0 -dir C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:vga_bram:1.0]
+set_property VALUE 5 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:vga_bram:1.0]]]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:vga_bram:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:vga_bram:1.0]
+set_property  ip_repo_paths  C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/../ip_repo/vga_bram_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_vga_bram_v1_0 -directory C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/../ip_repo c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project vga_sync
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:vga_bram:1.0 vga_bram_0
+endgroup
+set_property location {1 62 12} [get_bd_cells vga_bram_0]
+set_property location {1 111 -21} [get_bd_cells vga_bram_0]
+current_project edit_vga_bram_v1_0
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+startgroup
+current_project vga_sync
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+endgroup
+set_property location {1 105 -85} [get_bd_cells axi_bram_ctrl_0]
+current_project edit_vga_bram_v1_0
+update_compile_order -fileset sources_1
+startgroup
+current_project vga_sync
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+delete_bd_objs [get_bd_cells axi_bram_ctrl_0]
+set_property location {1.5 288 -2} [get_bd_cells blk_mem_gen_0]
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {false} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.EN_SAFETY_CKT {true}] [get_bd_cells blk_mem_gen_0]
+current_project edit_vga_bram_v1_0
+current_project vga_sync
+current_project edit_vga_bram_v1_0
+close_project
+save_bd_design

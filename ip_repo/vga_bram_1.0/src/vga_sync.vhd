@@ -12,6 +12,9 @@ ENTITY vga_sync IS
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
         vga_b            : OUT std_logic_vector(3 downto 0)
+--		video_on         : OUT std_logic
+--		p_tick           : OUT std_logic;
+--		pixel_x, pixel_y : OUT std_logic_vector (9 DOWNTO 0)
 	);
 END vga_sync;
 
