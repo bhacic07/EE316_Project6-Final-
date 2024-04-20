@@ -7,7 +7,7 @@ ENTITY vga_sync IS
 		clk, reset       : IN std_logic;
         I_CLK_50MHZ      : IN std_logic;
         bram_data_in     : IN std_logic_vector(31 downto 0);
-        bram_addr_out    : OUT std_logic_vector(15 downto 0):="0000";
+        bram_addr_out    : OUT std_logic_vector(15 downto 0);--:="0000";
 		hsync, vsync     : OUT std_logic;
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
@@ -145,16 +145,16 @@ h_end <= -- end of horizontal counter
                                sigR <= (others=>'0'); --make it black
                                sigG <= (others=>'0'); --make it black
                                sigB <= (others=>'0'); --make it black
-					       else if bram_data_in(index) = '0' then -- if no text is received, make the background
+					       elsif bram_data_in(index) = '0' then -- if no text is received, make the background
                                sigR <= (others=>'1'); --make it white
                                sigG <= (others=>'1'); --make it white
                                sigB <= (others=>'1'); --make it white
                            else
                            end if;
 					--p_tick <= pixel_tick;
-                           vga_r <= sigR when video_on = '1' ELSE "0000";
-                           vga_g <= sigG when video_on = '1' ELSE "0000";
-                           vga_b <= sigB when video_on = '1' ELSE "0000";
                     end process;
-                           
+                       
+                 vga_r <= sigR when video_on = '1' ELSE "0000";
+                 vga_g <= sigG when video_on = '1' ELSE "0000";
+                 vga_b <= sigB when video_on = '1' ELSE "0000";                          
 END arch;

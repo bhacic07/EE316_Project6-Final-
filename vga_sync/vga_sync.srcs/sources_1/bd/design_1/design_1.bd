@@ -4,62 +4,71 @@
       "boundary_crc": "0x0",
       "device": "xc7z007sclg400-1",
       "name": "design_1",
-      "synth_flow_mode": "Hierarchical",
+      "synth_flow_mode": "None",
       "tool_version": "2019.1"
     },
     "design_tree": {
-      "processing_system7_0": "",
-      "vga_bram_0": "",
-      "blk_mem_gen_0": ""
+      "vga_bram_0": ""
+    },
+    "ports": {
+      "hsync": {
+        "direction": "O"
+      },
+      "vsync": {
+        "direction": "O"
+      },
+      "vga_r": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "vga_g": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "vga_b": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
     },
     "components": {
-      "processing_system7_0": {
-        "vlnv": "xilinx.com:ip:processing_system7:5.5",
-        "xci_name": "design_1_processing_system7_0_0"
-      },
       "vga_bram_0": {
         "vlnv": "xilinx.com:user:vga_bram:1.0",
         "xci_name": "design_1_vga_bram_0_0"
-      },
-      "blk_mem_gen_0": {
-        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
-        "xci_name": "design_1_blk_mem_gen_0_0",
-        "parameters": {
-          "Assume_Synchronous_Clk": {
-            "value": "false"
-          },
-          "EN_SAFETY_CKT": {
-            "value": "true"
-          },
-          "Enable_B": {
-            "value": "Use_ENB_Pin"
-          },
-          "Memory_Type": {
-            "value": "True_Dual_Port_RAM"
-          },
-          "Port_B_Clock": {
-            "value": "100"
-          },
-          "Port_B_Enable_Rate": {
-            "value": "100"
-          },
-          "Port_B_Write_Rate": {
-            "value": "50"
-          },
-          "Use_RSTB_Pin": {
-            "value": "true"
-          }
-        }
       }
     },
-    "addressing": {
-      "/processing_system7_0": {
-        "address_spaces": {
-          "Data": {
-            "range": "4G",
-            "width": "32"
-          }
-        }
+    "nets": {
+      "vga_bram_0_hsync": {
+        "ports": [
+          "vga_bram_0/hsync",
+          "hsync"
+        ]
+      },
+      "vga_bram_0_vsync": {
+        "ports": [
+          "vga_bram_0/vsync",
+          "vsync"
+        ]
+      },
+      "vga_bram_0_vga_r": {
+        "ports": [
+          "vga_bram_0/vga_r",
+          "vga_r"
+        ]
+      },
+      "vga_bram_0_vga_g": {
+        "ports": [
+          "vga_bram_0/vga_g",
+          "vga_g"
+        ]
+      },
+      "vga_bram_0_vga_b": {
+        "ports": [
+          "vga_bram_0/vga_b",
+          "vga_b"
+        ]
       }
     }
   }

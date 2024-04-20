@@ -17,6 +17,7 @@ entity vga_bram_v1_0 is
 	port (
 		-- Users to add ports here
 		I_CLK_50MHZ      : IN std_logic;
+		I_CLK_125MHZ     : IN std_logic;
 		hsync, vsync     : OUT std_logic;
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
@@ -59,6 +60,12 @@ architecture arch_imp of vga_bram_v1_0 is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 5
 		);
 		port (
+		I_CLK_50MHZ      : IN std_logic;
+        I_CLK_125MHZ     : IN std_logic;
+		hsync, vsync     : OUT std_logic;
+        vga_r            : OUT std_logic_vector(3 downto 0);
+        vga_g            : OUT std_logic_vector(3 downto 0);
+        vga_b            : OUT std_logic_vector(3 downto 0);
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -92,9 +99,8 @@ vga_bram_v1_0_S00_AXI_inst : vga_bram_v1_0_S00_AXI
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
-	    I_CLK_50MHZ        =>I_CLK_50MHZ,      
-        bram_data_in       =>,     
-        bram_addr_out      =>,   
+	    I_CLK_50MHZ        =>I_CLK_50MHZ,
+	    I_CLK_125MHZ       =>I_CLK_125MHZ,
 		hsync              =>hsync, 
 		vsync              =>vsync,   
         vga_r              =>vga_r,   

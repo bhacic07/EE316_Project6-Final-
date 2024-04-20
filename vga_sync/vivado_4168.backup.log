@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 20 08:00:48 2024
+# Process ID: 4168
+# Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21480 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
+# Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vivado.log
+# Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.xpr
+WARNING: [Board 49-91] Board repository path 'C:/Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/olaol/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 734.582 ; gain = 94.910
+update_compile_order -fileset sources_1
+open_bd_design {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:vga_bram:1.0 - vga_bram_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Successfully read diagram <design_1> from BD file <C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 879.469 ; gain = 87.352
+ipx::edit_ip_in_project -upgrade true -name vga_bram_v1_0_project -directory C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 898.750 ; gain = 5.441
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 898.750 ; gain = 5.441
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd
+ERROR: [Vivado 12-3630] The destination file 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd -force
+WARNING: [Vivado 12-3631] The destination file or directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, -force is used to overwrite it
+c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci
+ERROR: [Vivado 12-3629] The destination directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci -force
+WARNING: [Vivado 12-3631] The destination file or directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0' already exists, -force is used to overwrite it
+c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd -force
+WARNING: [Vivado 12-3631] The destination file or directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, -force is used to overwrite it
+WARNING: [filemgmt 56-12] File 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' cannot be added to the project because it already exists in the project, skipping this file
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 20 09:35:08 2024...

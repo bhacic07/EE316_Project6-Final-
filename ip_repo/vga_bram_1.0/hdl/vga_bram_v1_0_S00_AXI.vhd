@@ -187,8 +187,8 @@ port map(
 --from the master (keyboard data)
     clka   =>I_CLK_125MHZ,
     wea    =>"1",
-    addra  =>S_AXI_AWADDR, --Address from master//HARDCODE TO SOME ADDRESS
-    dina   =>S_AXI_WDATA(7 downto 0), --Data from master//KEYBOARD DATA 
+    addra  => S_AXI_AWADDR, --Address from master//HARDCODE TO SOME ADDRESS
+    dina   => S_AXI_WDATA(7 downto 0), --Data from master//KEYBOARD DATA 
 --port b is to vga
 --the vga_sync then probes 
 --the bram for data based on its

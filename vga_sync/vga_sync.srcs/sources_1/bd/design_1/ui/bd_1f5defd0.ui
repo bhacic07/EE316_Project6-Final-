@@ -1,12 +1,20 @@
 {
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -x 900 -y -40 -defaultsOSRD
-preplace inst vga_bram_0 -pg 1 -lvl 2 -x 600 -y -20 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 1 -x 290 -y 0 -defaultsOSRD
-levelinfo -pg 1 -30 290 600 900 1100
-pagesize -pg 1 -db -bbox -sgen -30 -280 1100 200
+preplace port hsync -pg 1 -lvl 2 -x 1170 -y 20 -defaultsOSRD
+preplace port vsync -pg 1 -lvl 2 -x 1170 -y 40 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 2 -x 1170 -y 60 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 2 -x 1170 -y 80 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 2 -x 1170 -y 100 -defaultsOSRD
+preplace inst vga_bram_0 -pg 1 -lvl 1 -x 940 -y 60 -defaultsOSRD
+preplace netloc vga_bram_0_hsync 1 1 1 N 20
+preplace netloc vga_bram_0_vsync 1 1 1 N 40
+preplace netloc vga_bram_0_vga_r 1 1 1 N 60
+preplace netloc vga_bram_0_vga_g 1 1 1 N 80
+preplace netloc vga_bram_0_vga_b 1 1 1 N 100
+levelinfo -pg 1 -120 940 1170
+pagesize -pg 1 -db -bbox -sgen -120 -300 1290 200
 "
 }
-
+0
