@@ -7,7 +7,7 @@ ENTITY vga_sync IS
 		clk, reset       : IN std_logic;
         I_CLK_50MHZ      : IN std_logic;
         bram_data_in     : IN std_logic_vector(31 downto 0);
-        bram_addr_out    : OUT std_logic_vector(15 downto 0);
+        bram_addr_out    : OUT std_logic_vector(15 downto 0):="0000";
 		hsync, vsync     : OUT std_logic;
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
@@ -44,6 +44,8 @@ ARCHITECTURE arch OF vga_sync IS
 	SIGNAL h_end, v_end, pixel_tick : std_logic;
 	
 	SIGNAL video_on : std_logic;
+	signal pixel_x : std_logic_vector(9 DOWNTO 0);
+    signal pixel_y : std_logic_vector(9 DOWNTO 0);
 
 BEGIN
 
@@ -124,8 +126,12 @@ h_end <= -- end of horizontal counter
 					-- output signal
 					hsync <= h_sync_reg;
 					vsync <= v_sync_reg;
-					--pixel_x <= std_logic_vector(h_count_reg);
-					--pixel_y <= std_logic_vector(v_count_reg);
+					pixel_x <= std_logic_vector(h_count_reg);
+					pixel_y <= std_logic_vector(v_count_reg);
+					
+					--calculate the address to access based on the pixel
+					bram_addr_out <= std_logic_vector(to_unsigned((( TO_INTEGER(unsigned(pixel_x)) /8)+( TO_INTEGER(unsigned(pixel_y))))*80));
+					bram_data_in -- HOW TO USE?????????
 					--p_tick <= pixel_tick;
 				    vga_r <= "1111" when video_on = '1' ELSE "0000";
 				    vga_g <= "0000" when video_on = '1' ELSE "0000";

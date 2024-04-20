@@ -2,10 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr 18 12:45:59 2024
-# Process ID: 25296
+# Start of session at: Fri Apr 19 15:04:16 2024
+# Process ID: 19948
 # Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20552 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5868 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
 # Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vivado.log
 # Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync\vivado.jou
 #-----------------------------------------------------------
@@ -18,107 +18,46 @@ WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the director
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 741.305 ; gain = 137.805
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 736.832 ; gain = 142.820
 update_compile_order -fileset sources_1
 open_bd_design {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/bd/design_1/design_1.bd}
 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding component instance block -- xilinx.com:user:vga_bram:1.0 - vga_bram_0
 Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
 Successfully read diagram <design_1> from BD file <C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 834.434 ; gain = 81.398
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 826.355 ; gain = 64.223
 ipx::edit_ip_in_project -upgrade true -name vga_bram_v1_0_project -directory C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/component.xml
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project'
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 880.637 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 862.914 ; gain = 18.781
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 880.637 ; gain = 0.000
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 881.336 ; gain = 37.203
 update_compile_order -fileset sources_1
-add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd
-ERROR: [Vivado 12-3630] The destination file 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, please use -force if you want to overwrite!
 add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd
 ERROR: [Vivado 12-3630] The destination file 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, please use -force if you want to overwrite!
 add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd -force
 WARNING: [Vivado 12-3631] The destination file or directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd' already exists, -force is used to overwrite it
 c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd
 update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src
-set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {15} CONFIG.Read_Width_A {32} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0]
-generate_target {instantiation_template} [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci
+ERROR: [Vivado 12-3629] The destination directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci -force
+WARNING: [Vivado 12-3631] The destination file or directory 'c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0' already exists, -force is used to overwrite it
+c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci
 update_compile_order -fileset sources_1
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-set_property generate_synth_checkpoint false [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-generate_target all [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-export_ip_user_files -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files -ipstatic_source_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/questa} {riviera=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/coeFile.coe' provided. It will be converted relative to IP Instance files '../../../../vga_sync.srcs/coeFile.coe'
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Temp/EE316/p6/EE316_Project6-Final/coeFile.coe' provided. It will be converted relative to IP Instance files '../../../../../coeFile.coe'
-set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {38400} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Temp/EE316/p6/EE316_Project6-Final/coeFile.coe} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Enable_Rate {0}] [get_ips blk_mem_gen_0]
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Temp/EE316/p6/EE316_Project6-Final/coeFile.coe' provided. It will be converted relative to IP Instance files '../../../../coeFile.coe'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0_S00_AXI.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0_S00_AXI.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-generate_target all [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1007.191 ; gain = 0.000
-export_ip_user_files -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files -ipstatic_source_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/questa} {riviera=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_target all [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-export_ip_user_files -of_objects  [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -sync -no_script -force -quiet
-generate_target all [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1007.285 ; gain = 0.094
-export_ip_user_files -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files -ipstatic_source_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/questa} {riviera=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-update_compile_order -fileset sources_1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/coeFile.coe' provided. It will be converted relative to IP Instance files '../../../../vga_sync.srcs/sources_1/coeFile.coe'
-set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Coe_File {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/coeFile.coe} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0]
-INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/coeFile.coe' provided. It will be converted relative to IP Instance files '../../../../vga_sync/vga_sync.srcs/sources_1/coeFile.coe'
-generate_target all [get_files  c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
-export_ip_user_files -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files -ipstatic_source_dir c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/questa} {riviera=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 15:57:48 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 17:30:28 2024...

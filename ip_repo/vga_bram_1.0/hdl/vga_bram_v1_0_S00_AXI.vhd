@@ -18,16 +18,12 @@ entity vga_bram_v1_0_S00_AXI is
 		-- Users to add ports here
         I_CLK_50MHZ      : IN std_logic;
         I_CLK_125MHZ     : IN std_logic;
-        bram_data_in     : IN std_logic_vector(31 downto 0);
-        bram_addr_out    : OUT std_logic_vector(15 downto 0);
 		hsync, vsync     : OUT std_logic;
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
         vga_b            : OUT std_logic_vector(3 downto 0);
         
-        --!!!!!!!!!!!!!!!!!!INCLUDE BRAM HERE!!!!!!!!!!!
-        
-        
+          
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -106,7 +102,8 @@ component vga_sync IS
 		hsync, vsync     : OUT std_logic;
         vga_r            : OUT std_logic_vector(3 downto 0);
         vga_g            : OUT std_logic_vector(3 downto 0);
-        vga_b            : OUT std_logic_vector(3 downto 0)
+        vga_b            : OUT std_logic_vector(3 downto 0);
+   		pixel_x, pixel_y : OUT std_logic_vector (9 DOWNTO 0)
 	);
 END component vga_sync;
 
@@ -157,10 +154,14 @@ END component blk_mem_gen_0;
 	signal aw_en	: std_logic;
 	
 	--User Added
---    signal bram_data_in        : std_logic_vector(31 downto 0);
---    signal bram_addr_out       : std_logic_vector(15 downto 0);
+    signal bram_data_in        : std_logic_vector(31 downto 0);
+    signal bram_addr_out       : std_logic_vector(15 downto 0);
 --    signal hsync, vsync        : std_logic;
 --    signal vga_r, vga_g, vga_b : std_logic_vector(3 downto 0);
+signal doutb : STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal addrb : STD_LOGIC_VECTOR(15 DOWNTO 0);
+signal dontCare: STD_LOGIC_VECTOR(7 DOWNTO 0);
+--signal read_addr :std_logic;
 
 begin
 
@@ -170,8 +171,8 @@ port map(
 		clk           =>S_AXI_ACLK,
 		reset         =>S_AXI_ARESETN,
 		I_CLK_50MHZ   =>I_CLK_50MHZ,
-		bram_data_in  =>doutb,
-		bram_addr_out =>addrb,
+		bram_data_in  => bram_data_in,  --x"000000" & doutb,
+		bram_addr_out => bram_addr_out, --addrb,
 		hsync         =>hsync, 
 		vsync         =>vsync,
         vga_r         =>vga_r,
@@ -181,10 +182,12 @@ port map(
 
 INST_blk_mem_gen_0: blk_mem_gen_0
 port map(
+--port a is to keyboard
     clka   =>I_CLK_125MHZ,
-    wea    =>'1',
-    addra  =>,--HARDCODE TO SOME ADDR,
-    dina   =>,--HARDCODE TO SOME data
+    wea    =>"1",
+    addra  => , --HARDCODE TO SOME data
+    dina   =>dontCare, --we dont need this
+--port b is to vga
     clkb   =>I_CLK_125MHZ,
     addrb  =>bram_addr_out,
     doutb  =>bram_data_in
