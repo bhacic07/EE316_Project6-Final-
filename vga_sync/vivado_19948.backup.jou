@@ -2,10 +2,10 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Apr 20 08:00:48 2024
-# Process ID: 4168
+# Start of session at: Fri Apr 19 15:04:16 2024
+# Process ID: 19948
 # Current directory: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21480 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5868 C:\Temp\EE316\p6\EE316_Project6-Final\vga_sync\vga_sync.xpr
 # Log file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vivado.log
 # Journal file: C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync\vivado.jou
 #-----------------------------------------------------------
@@ -15,12 +15,10 @@ update_compile_order -fileset sources_1
 open_bd_design {C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.srcs/sources_1/bd/design_1/design_1.bd}
 ipx::edit_ip_in_project -upgrade true -name vga_bram_v1_0_project -directory C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/component.xml
 update_compile_order -fileset sources_1
-add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd
-add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd -force
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd
+add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/vga_sync/vga_sync.vhd -force
 update_compile_order -fileset sources_1
 add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci
 add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci -force
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-add_files -norecurse -copy_to c:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src C:/Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd -force
 close_project

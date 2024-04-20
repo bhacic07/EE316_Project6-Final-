@@ -12,7 +12,7 @@ entity vga_bram_v1_0_S00_AXI is
 		-- Width of S_AXI data bus
 		C_S_AXI_DATA_WIDTH	: integer	:= 32;
 		-- Width of S_AXI address bus
-		C_S_AXI_ADDR_WIDTH	: integer	:= 5
+		C_S_AXI_ADDR_WIDTH	: integer	:= 16 --WAS 5
 	);
 	port (
 		-- Users to add ports here
@@ -183,11 +183,16 @@ port map(
 INST_blk_mem_gen_0: blk_mem_gen_0
 port map(
 --port a is to keyboard
+--this fills up the bram with data
+--from the master (keyboard data)
     clka   =>I_CLK_125MHZ,
     wea    =>"1",
-    addra  => , --HARDCODE TO SOME data
-    dina   =>dontCare, --we dont need this
+    addra  =>S_AXI_AWADDR, --Address from master//HARDCODE TO SOME ADDRESS
+    dina   =>S_AXI_WDATA(7 downto 0), --Data from master//KEYBOARD DATA 
 --port b is to vga
+--the vga_sync then probes 
+--the bram for data based on its
+--current pixel
     clkb   =>I_CLK_125MHZ,
     addrb  =>bram_addr_out,
     doutb  =>bram_data_in

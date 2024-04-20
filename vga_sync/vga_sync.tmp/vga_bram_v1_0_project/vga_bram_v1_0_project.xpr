@@ -6,7 +6,7 @@
 <Project Version="7" Minor="40" Path="c:/temp/ee316/p6/ee316_project6-final/vga_sync/vga_sync.tmp/vga_bram_v1_0_project/vga_bram_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="5b156c4b30984bda98f0dc4a9e4784d5"/>
+    <Option Name="Id" Val="c1ec40b0b8c3473e9ffee75477a843d0"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -78,15 +78,16 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd">
+      <File Path="$PPRDIR/../../../../../../../Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0.vhd">
         <FileInfo>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/hdl/vga_bram_v1_0.vhd">
+      <File Path="$PPRDIR/../../../../../../../Temp/EE316/p6/EE316_Project6-Final/ip_repo/vga_bram_1.0/src/vga_sync.vhd">
         <FileInfo>
-          <Attr Name="Library" Val=""/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

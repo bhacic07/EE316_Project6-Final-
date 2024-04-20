@@ -46,6 +46,9 @@ ARCHITECTURE arch OF vga_sync IS
 	SIGNAL video_on : std_logic;
 	signal pixel_x : std_logic_vector(9 DOWNTO 0);
     signal pixel_y : std_logic_vector(9 DOWNTO 0);
+    signal Sig_bram_addr_out: std_logic_vector(9 downto 0);
+    signal index :integer;
+    signal sigR, sigB, sigG: std_logic_vector(3 downto 0);
 
 BEGIN
 
@@ -129,11 +132,29 @@ h_end <= -- end of horizontal counter
 					pixel_x <= std_logic_vector(h_count_reg);
 					pixel_y <= std_logic_vector(v_count_reg);
 					
+					--BRAM ADDR LOGIC
 					--calculate the address to access based on the pixel
-					bram_addr_out <= std_logic_vector(to_unsigned((( TO_INTEGER(unsigned(pixel_x)) /8)+( TO_INTEGER(unsigned(pixel_y))))*80));
-					bram_data_in -- HOW TO USE?????????
+					bram_addr_out <= std_logic_vector( to_unsigned( ((TO_INTEGER(unsigned(pixel_x))/8) + (TO_INTEGER(unsigned(pixel_y))) *80),Sig_bram_addr_out'length) );
+					
+					--BRAM DATA LOGIC
+					--defines how to handle the bram data in
+					index <= to_integer(unsigned(pixel_x)) mod 8;
+					process(clk,reset) 
+					   begin
+					       if bram_data_in(index) = '1' then -- If text is received,
+                               sigR <= (others=>'0'); --make it black
+                               sigG <= (others=>'0'); --make it black
+                               sigB <= (others=>'0'); --make it black
+					       else if bram_data_in(index) = '0' then -- if no text is received, make the background
+                               sigR <= (others=>'1'); --make it white
+                               sigG <= (others=>'1'); --make it white
+                               sigB <= (others=>'1'); --make it white
+                           else
+                           end if;
 					--p_tick <= pixel_tick;
-				    vga_r <= "1111" when video_on = '1' ELSE "0000";
-				    vga_g <= "0000" when video_on = '1' ELSE "0000";
-				    vga_b <= "1111" when video_on = '1' ELSE "0000";
+                           vga_r <= sigR when video_on = '1' ELSE "0000";
+                           vga_g <= sigG when video_on = '1' ELSE "0000";
+                           vga_b <= sigB when video_on = '1' ELSE "0000";
+                    end process;
+                           
 END arch;
